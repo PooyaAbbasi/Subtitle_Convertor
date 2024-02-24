@@ -11,7 +11,7 @@ def validate_file_extension(vtt_file_path: str):
 
 while True:
     vtt_file_path = input("\nEnter the complete path to the .vtt file " +
-                          "\n or type 'exit' to close the program :\n").strip()
+                          "\n or type 'exit' to close the program :\n").strip('"').strip()
     if vtt_file_path == 'exit':
         break
 
