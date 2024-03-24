@@ -1,0 +1,402 @@
+1
+00:00:00,000 --> 00:00:02,370
+Congratulations, you've reached
+
+2
+00:00:02,370 --> 00:00:04,920
+the end of this
+module on models.
+
+3
+00:00:04,920 --> 00:00:07,935
+In this module, you've
+learned to create models,
+
+4
+00:00:07,935 --> 00:00:11,310
+apply migrations to
+appropriate use cases using
+
+5
+00:00:11,310 --> 00:00:14,070
+best practice principles
+and learned to use
+
+6
+00:00:14,070 --> 00:00:17,940
+the query set API to
+interact with the database.
+
+7
+00:00:17,940 --> 00:00:21,540
+Next, you discovered how
+to create a form and
+
+8
+00:00:21,540 --> 00:00:25,200
+use the form API to
+bind data to objects.
+
+9
+00:00:25,200 --> 00:00:28,245
+You learned how to use
+the Django admin panel to
+
+10
+00:00:28,245 --> 00:00:31,500
+add and control the permissions
+of users and groups.
+
+11
+00:00:31,500 --> 00:00:34,220
+Finally, unpacked how to set up
+
+12
+00:00:34,220 --> 00:00:37,210
+a MySQL database for
+your Django app.
+
+13
+00:00:37,210 --> 00:00:38,960
+It's now time to recap
+
+14
+00:00:38,960 --> 00:00:41,255
+the key points and the
+skills you've gained.
+
+15
+00:00:41,255 --> 00:00:44,600
+You began the module with
+models and migrations.
+
+16
+00:00:44,600 --> 00:00:46,625
+Here, you explored models,
+
+17
+00:00:46,625 --> 00:00:48,980
+fields, attributes, and keys.
+
+18
+00:00:48,980 --> 00:00:51,800
+You are now able to describe
+the relationship and
+
+19
+00:00:51,800 --> 00:00:55,745
+similarities between models
+and databases with tables,
+
+20
+00:00:55,745 --> 00:00:59,315
+and demonstrate how to
+create models in Django,
+
+21
+00:00:59,315 --> 00:01:01,670
+focusing on the
+different attributes.
+
+22
+00:01:01,670 --> 00:01:03,500
+Furthermore, you can now
+
+23
+00:01:03,500 --> 00:01:05,870
+summarize the concept
+of migrations and
+
+24
+00:01:05,870 --> 00:01:07,160
+how they are beneficial in
+
+25
+00:01:07,160 --> 00:01:09,889
+web applications
+through best practices,
+
+26
+00:01:09,889 --> 00:01:12,655
+dealing with issues
+and rolling back.
+
+27
+00:01:12,655 --> 00:01:16,430
+You can discuss how migrations
+can save a lot of time for
+
+28
+00:01:16,430 --> 00:01:18,395
+development teams by separating
+
+29
+00:01:18,395 --> 00:01:20,990
+the SQL away from the coding.
+
+30
+00:01:20,990 --> 00:01:22,655
+There is no need to create
+
+31
+00:01:22,655 --> 00:01:25,460
+SQL queries directly
+against the database,
+
+32
+00:01:25,460 --> 00:01:27,020
+or where to store
+
+33
+00:01:27,020 --> 00:01:30,035
+these files so that other
+developers can run them.
+
+34
+00:01:30,035 --> 00:01:34,370
+Next, you explored Object
+Relational Mapping, ORM,
+
+35
+00:01:34,370 --> 00:01:36,530
+and how jangle uses it to create
+
+36
+00:01:36,530 --> 00:01:39,310
+SQL queries against
+the database.
+
+37
+00:01:39,310 --> 00:01:43,055
+You also discovered the
+query set API and how
+
+38
+00:01:43,055 --> 00:01:45,020
+developers use it to save and
+
+39
+00:01:45,020 --> 00:01:47,260
+retrieve data in the database.
+
+40
+00:01:47,260 --> 00:01:49,580
+Following models and migrations,
+
+41
+00:01:49,580 --> 00:01:51,860
+you learned about
+models and forums.
+
+42
+00:01:51,860 --> 00:01:55,520
+You were introduced to Django's
+rich framework for forms
+
+43
+00:01:55,520 --> 00:01:56,690
+and how to manipulate
+
+44
+00:01:56,690 --> 00:01:59,855
+form data to extract
+and send information.
+
+45
+00:01:59,855 --> 00:02:03,110
+You are now able to showcase
+setting up a model with
+
+46
+00:02:03,110 --> 00:02:05,180
+different data types and how
+
+47
+00:02:05,180 --> 00:02:07,885
+they are mapped from a
+standard body request.
+
+48
+00:02:07,885 --> 00:02:11,060
+You also exercised
+creating forms by using
+
+49
+00:02:11,060 --> 00:02:15,020
+the forum API and some of
+its inbuilt datatypes.
+
+50
+00:02:15,020 --> 00:02:17,765
+Next, you focused on admin.
+
+51
+00:02:17,765 --> 00:02:19,730
+This section introduced you to
+
+52
+00:02:19,730 --> 00:02:22,865
+the Django admin and some
+of its core features.
+
+53
+00:02:22,865 --> 00:02:24,470
+You can demonstrate how to
+
+54
+00:02:24,470 --> 00:02:26,510
+create and manage
+users and groups
+
+55
+00:02:26,510 --> 00:02:28,490
+directly from the admin panel to
+
+56
+00:02:28,490 --> 00:02:31,235
+provide access to the
+web applications.
+
+57
+00:02:31,235 --> 00:02:33,740
+You also learned how
+permissions work
+
+58
+00:02:33,740 --> 00:02:34,940
+at the view, model,
+
+59
+00:02:34,940 --> 00:02:37,130
+and controller
+levels, and how they
+
+60
+00:02:37,130 --> 00:02:40,025
+can be added using the
+Django admin view.
+
+61
+00:02:40,025 --> 00:02:42,200
+Lastly, you can set up
+
+62
+00:02:42,200 --> 00:02:44,920
+users and add or
+revoke permissions.
+
+63
+00:02:44,920 --> 00:02:48,765
+Finally, you explore
+database configuration.
+
+64
+00:02:48,765 --> 00:02:50,690
+You are now able to showcase
+
+65
+00:02:50,690 --> 00:02:53,240
+the different database
+options that are available in
+
+66
+00:02:53,240 --> 00:02:57,925
+Django with MySQLite and
+MySQL as the main focus.
+
+67
+00:02:57,925 --> 00:03:00,410
+You practice the steps
+needed to set up
+
+68
+00:03:00,410 --> 00:03:02,570
+the database configuration and
+
+69
+00:03:02,570 --> 00:03:05,400
+SQLite database for
+local development.
+
+70
+00:03:05,400 --> 00:03:07,970
+Then you learned about
+the configuration options
+
+71
+00:03:07,970 --> 00:03:10,415
+for setting up a
+MySQL database and
+
+72
+00:03:10,415 --> 00:03:13,670
+exercised session of a
+MySQL database connection
+
+73
+00:03:13,670 --> 00:03:16,060
+and testing that
+it's up and running.
+
+74
+00:03:16,060 --> 00:03:18,320
+You're now familiar with models.
+
+75
+00:03:18,320 --> 00:03:20,060
+More specifically, you can
+
+76
+00:03:20,060 --> 00:03:22,750
+create models and
+apply migrations.
+
+77
+00:03:22,750 --> 00:03:24,140
+You can also use
+
+78
+00:03:24,140 --> 00:03:27,260
+the query search API to
+interact with the database
+
+79
+00:03:27,260 --> 00:03:28,970
+and create forums by leveraging
+
+80
+00:03:28,970 --> 00:03:32,155
+the form API to bind
+data to objects.
+
+81
+00:03:32,155 --> 00:03:34,070
+You familiarize yourself with
+
+82
+00:03:34,070 --> 00:03:36,050
+the Django admin panel to add
+
+83
+00:03:36,050 --> 00:03:38,695
+and control the permissions
+of users and groups.
+
+84
+00:03:38,695 --> 00:03:41,345
+Finally, you concluded
+by setting up
+
+85
+00:03:41,345 --> 00:03:43,985
+a MySQL database for
+your Django app.
+
+86
+00:03:43,985 --> 00:03:46,085
+Well done. You're making
+
+87
+00:03:46,085 --> 00:03:49,680
+excellent progress through
+your Django development.

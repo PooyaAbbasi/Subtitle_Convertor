@@ -1,0 +1,325 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.425
+When creating a Django project,
+
+2
+00:00:02.425 --> 00:00:06.910
+the default configuration
+uses an SQLite database.
+
+3
+00:00:06.910 --> 00:00:12.010
+It is automatically set inside the file,
+settings.py file.
+
+4
+00:00:12.010 --> 00:00:16.285
+This means that you can directly start
+working with the database immediately.
+
+5
+00:00:16.285 --> 00:00:21.739
+SQLite is known as a user-friendly
+zero configuration database.
+
+6
+00:00:21.739 --> 00:00:24.380
+And there are many advantages to using it.
+
+7
+00:00:24.380 --> 00:00:29.210
+You don't need to install anything to
+support the database as it doesn't run as
+
+8
+00:00:29.210 --> 00:00:31.070
+a server process.
+
+9
+00:00:31.070 --> 00:00:34.877
+This means the database does not
+need to be started or stopped, or
+
+10
+00:00:34.877 --> 00:00:37.960
+require additional configuration files.
+
+11
+00:00:37.960 --> 00:00:42.097
+As a result, this type of database
+is suitable for small projects or
+
+12
+00:00:42.097 --> 00:00:44.330
+rapid prototyping.
+
+13
+00:00:44.330 --> 00:00:48.790
+Suppose you are developing projects
+that need a quick test environment.
+
+14
+00:00:48.790 --> 00:00:49.690
+In that case,
+
+15
+00:00:49.690 --> 00:00:54.431
+SQLite is a solid option as it doesn't
+require running a separate server.
+
+16
+00:00:55.450 --> 00:00:59.500
+There may be occasions when a more
+scalable robust database is needed.
+
+17
+00:00:59.500 --> 00:01:04.017
+For example, when moving from
+a development to a production environment.
+
+18
+00:01:04.017 --> 00:01:08.947
+In this video, you will learn how to
+configure database options to work with
+
+19
+00:01:08.947 --> 00:01:11.960
+a MySQL database in a Django project.
+
+20
+00:01:11.960 --> 00:01:16.574
+Django supports the use of many
+databases with minimal configuration.
+
+21
+00:01:16.574 --> 00:01:21.180
+These include PostgreSQL, MariaDB,
+
+22
+00:01:21.180 --> 00:01:24.535
+MySQL, Oracle and SQLite.
+
+23
+00:01:24.535 --> 00:01:30.340
+Among these PostgreSQL and
+MySQL are most commonly used.
+
+24
+00:01:30.340 --> 00:01:34.726
+Django has features to support each
+database that make it easy to connect and
+
+25
+00:01:34.726 --> 00:01:35.910
+work with.
+
+26
+00:01:35.910 --> 00:01:39.870
+It provides a generic way to access
+the different types of databases and
+
+27
+00:01:39.870 --> 00:01:44.410
+a connection to a database is established
+by knowing the type of database.
+
+28
+00:01:44.410 --> 00:01:48.726
+Within this lesson, you will deal
+with one of the most popular and
+
+29
+00:01:48.726 --> 00:01:50.934
+widely used databases, MySQL.
+
+30
+00:01:50.934 --> 00:01:56.920
+Let's begin by exploring how to set up
+database connections to a MySQL database.
+
+31
+00:01:56.920 --> 00:02:01.688
+To connect to a MySQL database, you need
+to provide the address where the database
+
+32
+00:02:01.688 --> 00:02:06.400
+is running, the port number and
+the database name you wish to connect to.
+
+33
+00:02:06.400 --> 00:02:11.390
+You also need a database driver which is
+responsible for mapping all the models and
+
+34
+00:02:11.390 --> 00:02:16.280
+translating Python queries into
+SQL instructions via the model.
+
+35
+00:02:16.280 --> 00:02:21.369
+To use MySQL, the driver or connector,
+MySQL client needs to be installed.
+
+36
+00:02:21.369 --> 00:02:26.052
+When you connect to a database,
+the connection opens on each request and
+
+37
+00:02:26.052 --> 00:02:28.730
+is kept open for a specific time.
+
+38
+00:02:28.730 --> 00:02:32.547
+The connection is controlled by
+the CONN_MAX_AGE parameter and
+
+39
+00:02:32.547 --> 00:02:37.830
+represents a certain time before
+the connection is automatically closed.
+
+40
+00:02:37.830 --> 00:02:39.678
+To establish a connection,
+
+41
+00:02:39.678 --> 00:02:45.223
+you must configure parameters under the
+databases option of the settings.py file.
+
+42
+00:02:45.223 --> 00:02:49.040
+By default,
+the configuration is for SQLite.
+
+43
+00:02:49.040 --> 00:02:53.187
+You can also use an options file for
+MySQL to store the database
+
+44
+00:02:53.187 --> 00:02:58.670
+connection credentials and you will
+learn about it later in this lesson.
+
+45
+00:02:58.670 --> 00:03:02.785
+The credentials can include the database
+name, user name and password and
+
+46
+00:03:02.785 --> 00:03:05.339
+are stored in a separate
+configuration file.
+
+47
+00:03:05.339 --> 00:03:11.128
+Inside the file settings.py,
+the MySQL connection reference looks for
+
+48
+00:03:11.128 --> 00:03:15.154
+the connection file in
+the directory etc/mysql.
+
+49
+00:03:15.154 --> 00:03:18.850
+And notice that this is not
+within the Django project.
+
+50
+00:03:18.850 --> 00:03:21.580
+This is a deliberate security measure.
+
+51
+00:03:21.580 --> 00:03:26.002
+Okay, now that you know the steps
+needed to connect to a MySQL database,
+
+52
+00:03:26.002 --> 00:03:28.580
+let's explore database creation.
+
+53
+00:03:28.580 --> 00:03:33.181
+While Django creates all the tables based
+on the models you have from the migration
+
+54
+00:03:33.181 --> 00:03:37.464
+scripts, the initial setup requires
+you to manually create the database.
+
+55
+00:03:37.464 --> 00:03:41.196
+Creating a database requires
+a connection to the database itself and
+
+56
+00:03:41.196 --> 00:03:44.811
+sufficient permissions for
+authentication and authorization.
+
+57
+00:03:45.910 --> 00:03:50.336
+It's important to remember that you must
+keep the database secure by assigning
+
+58
+00:03:50.336 --> 00:03:54.020
+security roles and
+using strong user names and passwords.
+
+59
+00:03:54.020 --> 00:03:57.870
+The data stored may contain end
+users personal information.
+
+60
+00:03:57.870 --> 00:04:02.300
+So keeping it private and
+safe is of the utmost importance.
+
+61
+00:04:02.300 --> 00:04:06.250
+As a developer, you need to be
+aware of potential security risks.
+
+62
+00:04:06.250 --> 00:04:10.991
+And one significant risk is the security
+of the credentials of your database.
+
+63
+00:04:10.991 --> 00:04:14.099
+Allowing someone to know or
+access the user name and
+
+64
+00:04:14.099 --> 00:04:18.320
+password of your database
+can have major consequences.
+
+65
+00:04:18.320 --> 00:04:23.166
+The database connection credentials are
+only accessible on the virtual machine or
+
+66
+00:04:23.166 --> 00:04:25.875
+server where the web
+application is running.
+
+67
+00:04:25.875 --> 00:04:30.259
+In this video, you learned how to
+configure database options to work with
+
+68
+00:04:30.259 --> 00:04:32.531
+a MySQL database in a Django project.

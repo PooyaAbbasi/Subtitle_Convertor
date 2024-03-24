@@ -4,6 +4,12 @@ from re import compile
 from typing import TextIO
 
 
+def convert_vtt_files_to_srt(*paths: str):
+    for path in paths:
+        if (result := convert_vtt_to_srt(path)) is not None:
+            print(result)
+
+
 def convert_vtt_to_srt(vtt_file_path) -> FileNotFoundError | None:
     try:
         with open(vtt_file_path, 'rt') as vtt_file:
@@ -16,7 +22,6 @@ def convert_vtt_to_srt(vtt_file_path) -> FileNotFoundError | None:
             new_srt_file.close()
 
     except FileNotFoundError as not_found_error:
-        print(not_found_error)
         return not_found_error
 
     return None
