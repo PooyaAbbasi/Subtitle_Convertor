@@ -15,7 +15,7 @@ class TestConversion(unittest.TestCase):
                                    "This is the second subtitle.\n")
                                   )
 
-        result = list(Conversion.replace_periods_with_comma_in_timestamps(test_mock_file))
+        result = list(Conversion._replace_periods_with_comma_in_timestamps(test_mock_file))
 
         expected = [
             "1\n",

@@ -13,13 +13,20 @@ def get_vtt_file_paths(directory: str):
             yield path.join(cleaned_dir_path, file_name)
 
 
-def clean_file_path(file_path: str):
-    return file_path.strip('\'')
+def clean_file_path(file_name: str):
+    """
+    removes quotes from file name str.
+    """
+    return file_name.strip('\'')
 
 
 def clean_dir_path(directory: str):
-    return directory.strip('\"')
+    """
+    removes double quotes and spaces from directory name str.
+    """
+    return directory.strip('\"').strip(' ')
 
 
 def validate_file_extension(vtt_file_path: str):
+    """ checks if the file extension is .vtt ."""
     return vtt_file_path.endswith(".vtt")
